@@ -2024,7 +2024,7 @@ pre code {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255, 0.5);
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -2067,7 +2067,7 @@ pre code {
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: #fff;
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
@@ -10208,15 +10208,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: rgb(116, 170, 194);
+    color: #64a19d;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: rgb(116, 170, 194);
+    color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: rgb(116, 170, 194);
+    color: #64a19d;
     outline: none;
-    border-bottom: 0.25rem solid rgb(116, 170, 194);
+    border-bottom: 0.25rem solid #64a19d;
   }
 }
 
@@ -10316,7 +10316,7 @@ body {
 }
 
 .signup-section {
-  padding: 10rem 0;
+  padding: 6rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 50%, #000000 100%), url("../assets/img/portfolio-img-2.jpeg");
   background-position: center;
   background-repeat: no-repeat;
@@ -10325,21 +10325,21 @@ body {
 }
 .signup-section input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
+  padding: 0.8rem 1.75rem;
   height: auto;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 0.15rem;
   border: 0;
 }
 .signup-section textarea {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
+  padding: 1.25rem 1.5rem;
   height: auto;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 0.15rem;
   border: 0;
 }
@@ -10385,8 +10385,9 @@ body {
   padding: 5rem 0;
 }
 
-.border-bottom {
-  border-bottom: 0.25rem solid rgba(255, 255, 255, 0.5);
+.border-end {
+  border-bottom: 0.25rem solid #303030;
+  margin: 0rem 5rem;
 }
 
 .projects-margin {

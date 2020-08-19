@@ -34,7 +34,6 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#software development">Software Development</a></li> -->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
                 </ul>
             </div>
@@ -45,28 +44,11 @@
         <div class="container d-flex h-50 align-items-center">
             <div class="mx-auto pb-5 text-center">
                 <h1 class="mx-auto text-uppercase">Jon Kline</h1>
-                <!-- <h2 class="text-black-50 mx-auto mb-5">To get somewhere you have never been, you must do something you have never done.</h2> -->
-                <!-- <div>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a class="btn btn-primary js-scroll-trigger" href="#about">About</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn btn-primary js-scroll-trigger" href="#projects">Engineering</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn btn-primary js-scroll-trigger" href="#about">Software Development</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn btn-primary js-scroll-trigger" href="#about">Contact</a>
-                            </li>
-                        </ul>
-                    </div> -->
             </div>
         </div>
     </header>
     <!-- About-->
-    <section class="about-section text-center border-bottom" id="about">
+    <section class="about-section text-center" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -79,7 +61,7 @@
                         research, technical conferences, and peer teaching. I did a Maymester in China, a technology
                         internship with SABIC, and an electronics reliability study for NSWC Crane as my senior design
                         project. After graduation, I spent two months doing business consulting for GarageExperts in
-                        Evansville while trying to find an engineering job. I decided to enroll in a three month,
+                        Evansville while trying to find an engineering job. I decided to enroll in a
                         full-time software development bootcamp through Eleven Fifty Academy, which is my current
                         pursuit. I am looking for a job in either materials engineering or software development or a
                         combination of the two.
@@ -88,12 +70,13 @@
                 </div>
             </div>
         </div>
+        <div class="border-end"></div>
     </section>
     <!-- Engineering and Software Development Projects -->
     <section class="projects-section" id="projects">
         <div class="projects-margin">
-            <h2 class="text-white text-center" style="margin-bottom: 3rem;">Software Development Projects</h2>
-            <div class="row">
+            <h2 class="text-white text-center" style="margin-bottom: 4rem;">Software Development Projects</h2>
+            <div class="row mb-5">
                 <div class="col-md-4">
                     <div class="card bg-dark">
                         <img src="assets/img/CSS-creature.JPG" class="card-img-top">
@@ -129,8 +112,9 @@
                         <div class="card-body">
                             <h5 class="card-title text-white">Pseudo-Snake</h5>
                             <p class="card-text text-white-50">In the third week of Eleven Fifty, we were tasked with
-                                creating a console game in pairs. My partner and I wanted to make a snake game, and this
-                                is a demo of the current version. We used a multidimensional array for the playing area,
+                                creating a console game in pairs. My partner and I decided to make a snake game, and
+                                this
+                                is a demo of how far we got. We used a multidimensional array for the playing area,
                                 and created methods to move the snake through the grid using directional keys. It
                                 currently does not add body segments when food is eaten, but we are proud of it, as this
                                 was our first project with C#!</p>
@@ -140,6 +124,14 @@
                     </div>
                 </div>
             </div>
+            <div class="border-end"></div>
+            <div class="mb-5" style="margin-top: 5rem">
+                <h2 class="text-white mx-auto text-center" style="margin-bottom: 4rem;">Learn More</h2>
+                <div class="mx-auto text-center">
+                    <a href="https://drive.google.com/file/d/1P7wHztId04TEEYX0x0DVWt8qSJiDocxa/view?usp=sharing"
+                        download class="btn btn-primary">Download Resume</a>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Signup-->
@@ -147,22 +139,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto text-center">
-                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                     <h2 class="text-white mb-5">Get in Touch</h2>
                 </div>
             </div>
-            <form>
+            <form action="https://formspree.io/xaypzede" method="POST">
                 <div class="form-group">
-                    <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="text"
-                        placeholder="Name" />
+                    <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputName" type="text"
+                        name="name" placeholder="Name" />
                 </div>
                 <div class="form-group">
                     <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email"
-                        placeholder="Email" />
+                        name="_replyto" placeholder="Email" />
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" rows="4" id="inputEmail" type="text"
-                        placeholder="Message"></textarea>
+                    <textarea class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" rows="4" id="inputMessage"
+                        type="text" name="message" placeholder="Message"></textarea>
                 </div>
                 <button class="btn btn-primary mx-auto" type="submit">Send Message</button>
             </form>
@@ -188,7 +179,7 @@
                             <i class="fas fa-envelope text-primary mb-2"></i>
                             <h4 class="text-uppercase m-0 text-white">Email</h4>
                             <hr class="my-4" />
-                            <div class="small text-white-50"><a href="#!">jonphilk@gmail.com</a></div>
+                            <div class="small text-white-50">jonphilk@gmail.com</div>
                         </div>
                     </div>
                 </div>
@@ -204,9 +195,9 @@
                 </div>
             </div>
             <div class="social d-flex justify-content-center">
-                <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                <a class="mx-2" href="https://www.linkedin.com/in/jonathan-kline-71629a156/"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="mx-2" href="https://github.com/jonphilk"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
@@ -224,43 +215,3 @@
 </body>
 
 </html>
-<!-- Featured Project Row-->
-<!-- <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="" /></div>
-    <div class="col-xl-4 col-lg-5">
-        <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-        </div>
-    </div>
-</div> -->
-<!-- Project One Row-->
-<!-- <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
-    <div class="col-lg-6">
-        <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                    <h4 class="text-white">Misty</h4>
-                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                    <hr class="d-none d-lg-block mb-0 ml-0" />
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- Project Two Row-->
-<!-- <div class="row justify-content-center no-gutters">
-    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
-    <div class="col-lg-6 order-lg-first">
-        <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                    <h4 class="text-white">Mountains</h4>
-                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
